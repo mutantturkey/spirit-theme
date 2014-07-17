@@ -1,0 +1,120 @@
+/* $Id: styles.css,v 1.1.2.2.2.1 2011/01/11 01:08:49 dvessel Exp $ */
+
+body {
+  background: #262626;
+}
+
+
+/* links */
+a:link {
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+a:visited {
+    text-decoration: none;
+}
+ 
+#site-header {
+}
+
+#branding {
+  width:100%;
+}
+
+#site-menu {
+  float:left;
+  width:25%;
+}
+
+#logo-parent{
+  width:960px;
+}
+
+#logo {
+  float: left;
+  margin: 0 auto; 
+  width:50%;
+  text-align:center;
+}
+
+#search-box{
+  float:right
+  width:25%;
+}
+
+#site-header {
+  width: 100%;
+}
+#site-header,
+#site-subheader,
+#footer-region,
+.column,
+.node,
+.comment,
+.block {
+  margin-bottom: 1.5em;
+}
+
+.form-type-bef-link {
+	float:left;
+	padding: .5em;
+}
+ul.main-menu,
+ul.secondary-menu {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.neighborhood-filter-links .view-filters .views-exposed-widget .views-widget-filter-tid {
+  margin-left: auto;
+  text-align:center; 
+  display: block;
+  margin-right: auto;
+}
+#page {
+  max-width: 960px;
+  background: #f7f8f8;
+}
+
+
+
+.footer-image-parent {
+  overflow: hidden;
+  background-image: url(images/city-footer.png);
+  height:150px;
+  width:100%;
+}
+
+.center-parent { 
+  width:100%;
+}
+
+.center-child {
+  text-align:center;
+  margin: 0 auto;
+}
+
+.section-subsubheader{
+  font-size: 250%;
+}
+
+.views-widget-filter-tid {
+  font-variant:small-caps;
+  font-size:125%
+}
+
+a:link.active {
+  color: #d71f26;
+}
+
+#views-exposed-form-fishtown-block .views-exposed-widgets {float: left; left: 50%; position: relative;}
+#views-exposed-form-fishtown-block .views-widget-filter-tid {float: left; left: -50%; position: relative;} 
+
+@media (max-width: 767px) {
+  #page {
+    max-width: 100%;
+    width: 960px;
+  }
+}
