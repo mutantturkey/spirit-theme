@@ -1,17 +1,24 @@
 name = Spirit
-description = A subtheme of ninesixty
+description = spirit theme
 screenshot = images/screenshot.png
 core = 7.x
 engine = phptemplate
 
 ; Stylesheets. Anything within the "framework" folder will be placed before all others.
 stylesheets[all][] = styles/framework/reset.css
-stylesheets[all][] = styles/framework/text.css
-stylesheets[all][] = styles/framework/960.css
+; stylesheets[all][] = styles/framework/960.css
 ; stylesheets[all][] = styles/framework/debug.css
 
 ; Theme specific styles. Any sub-themes should override this.
 stylesheets[all][] = styles/styles.css
+stylesheets[all][] = styles/slideshow.css
+stylesheets[all][] = styles/social-media.css
+stylesheets[all][] = styles/fadein.css
+
+; stylesheets[all][] = styles/framework/text.css
+
+scripts[] = scripts/search.js
+scripts[] = scripts/header.js
 
 regions[page_top]       = Page top
 regions[header]         = Header
