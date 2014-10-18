@@ -3,34 +3,7 @@
 ?>
 <div id="page" class="clearfix">
 
-  <div id="floating-header" class="floating-header clearfix">
-    <div id="float-bar">
-      <div id="left-header">&nbsp;</div>
-      <div id="search-button-container" class="clearfix right-header">
-        <div id="search-button" class="search-button">Search</div>
-      </div> 
-      <?php if ($linked_logo_img): ?>
-        <div id="logo-parent">
-          <span id="logo" class=""><?php print $linked_logo_img; ?></span>
-        </div>
-      <?php endif; ?>
-      <?php if ($main_menu_links || $secondary_menu_links): ?>
-      <div id="site-menu" class="clearfix">
-          <?php print $main_menu_links; ?>
-          <?php print $secondary_menu_links; ?>
-      </div>
-      <?php endif; ?>
-
-      <?php print render($page['header']); ?>
-    </div>
-    <?php // this is the floating search bar ?>
-    <div class="search-floater">
-    <?php if ($page['search_box']): ?>
-      <div id="search-box" class="clearfix"><?php print render($page['search_box']); ?></div>
-    <?php endif; ?>
-    </div>
-  </div>
-
+  <?php include "header.php" ?>
 
   <div id="main">
   <?php print render($title_prefix);
@@ -55,12 +28,6 @@
     <?php print $feed_icons; ?>
   </div>
 
-  <div id="footer">
-      <div id="footer-region" class="clearfix">
-        <?php print render($page['footer']); ?>
-      </div>
-      <div id="footer-image" class="clearfix">
-      </div>
-  </div>
+  <?php include "footer.php" ?>
 
 </div>
