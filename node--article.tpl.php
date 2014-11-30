@@ -1,15 +1,67 @@
-<?php if(isset($teaser)): ?>
-<a href="/node/<?php print $node->nid?>">
-<div class="article-box">
-  <div class="article-box-image"><img src="<?php print image_style_url("homepage_article", $node->field_image['und'][0]["uri"])?>"></div>
-  <div class="article-box-text">
-    <div class="article-box-location-and-section location-and-section"><?php print taxonomy_term_load($node->field_section['und'][0]["tid"])->name ?> in <?php print taxonomy_term_load($node->field_location['und'][0]["tid"])->name ?></div>
-    <div class="article-box-title"><?php print $node->title ?></div>
-    <div class="article-box-blurb"><?php print $node->body[LANGUAGE_NONE][0]['value'];?></div>
-  </div>
-</div>
-</a>
-<?php else: ?>
+<?php include 'head.php'; ?>
+<body>
+	<?php include 'header.php'; ?>
+	<div class="article-fixed">
+		<div id="textSize">
+			<h5>Text Size</h5>
+			<ul>
+				<li class="reg-text active" alt="small">A</li>
+				<li class="medium-text" alt="medium">A</li>
+				<li class="large-text" alt="large">A</li>
+			</ul>
+		</div>
+		<h5>Share</h5>
+		<ul class="article-share">
+			<li><a href="#"><img src="/sites/all/themes/spirit/assets/images/icons/fb-icon-blk.png"/><span>Facebook</span></a></li>
+			<li><a href="#"><img src="/sites/all/themes/spirit/assets/images/icons/twit-icon-blk.png"/><span>Twitter</span></a></li>
+			<li><a href="#"><img src="/sites/all/themes/spirit/assets/images/icons/mail-icon-blk.png"/><span>Email</span></a></li>
+			<li><a href="#"><img src="/sites/all/themes/spirit/assets/images/icons/fb-icon-blk.png"/><span>Pinterest</span></a></li>
+		</ul>
+	</div>
+	<div class="container">
+		<div class="container article article-title-block">
+			<span class="category">Sports in Bridesburg</span>
+      <h2 class="article-title">
+      <?php if ($title): ?><?php print $title ?>
+      <?php  endif; ?>
+      </h2>
+      <span class="By">
+        <?php if($node->field_author_name): ?>
+          By <?php print $node->field_author_name['und'][0]['value']; ?> | 
+        <?php endif ?>
+       <?php print date( 'D, M j, Y', $node->created);?> 
+      </span>
+			<hr class="tiny"/>
+		</div>
+		<div class="container post article">
+			<div class="article-content">	
+        <?php print render($node->body[LANGUAGE_NONE][0]['value']); ?>
+			</div>
+			<div class="spirit-spons">
+				<h5>Sponsored by</h5>
+				<ul>
+					<li><img src="http://placehold.it/500x750"></li>
+					<li><img src="http://placehold.it/500x750"></li>
+					<li><img src="http://placehold.it/500x750"></li>
+					<li><img src="http://placehold.it/500x750"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+  <?php print render($page['footer']); ?>
+</body>
+<?php include 'footer.php'; ?>
+
+
+
+
+
+
+
+
+
+
+<?php exit() ?>
 
 <div id="page" class="clearfix article">
 
@@ -32,8 +84,11 @@
         <div class="hr"></div>
         <div class= "author-date">
           <span class="by">BY</span>
-          <span class="author"><?php print user_load($node->uid)->name; ?></span>
-          <span class="date"> | <?php print date( 'D, M j, Y', $node->created);?> 
+
+          <?php if($node->field_author_name['und'][0]['value']): ?>
+            <span class="author">By <?php print $node->field_author_name['und'][0]['value']; ?></span> | 
+          <?php endif ?>
+          <span class="date"><?php print date( 'D, M j, Y', $node->created);?> 
         </div>
       
     </div>
@@ -143,7 +198,9 @@
     </div>
   </div>
 
+  <div class="container">
+  <?php print render($page['Footer']); ?>
+  </div>
   <?php include "footer.php" ?>
 
 </div>
-<?php endif; ?>
