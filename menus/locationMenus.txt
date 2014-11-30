@@ -1,0 +1,5 @@
+Bridesburg {"url": "neighborhood/Bridesburg"}
+Fishtown {"url": "neighborhood/Fishtown"}
+Kensignton {"url": neighborhood/"Kensignton"}
+Northern Liberties {"url": "neighborhood/Northern Liberties"}
+Port Richmond {"url": "neighborhood/Port Richmond"}

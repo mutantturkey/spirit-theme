@@ -1,0 +1,6 @@
+Headlines {"url":"section/Headlines"}
+Features {"url": "Features"}
+Events {"url":"Events"}
+Sports  {"url":"section/Sports "}
+Local Business {"url":"section/Business"}
+Opinion {"url":"section/Opinion"}
