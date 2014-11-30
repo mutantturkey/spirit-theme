@@ -1,0 +1,561 @@
+@import 'fonts';
+
+h1, h2, h3, h4, h5, h6, form, textarea, input, input[type="text"], .article-share li a, input[type="search"], input[type="password"], input[type="email"], .btn, button, .info-block .contact a, .credits, .toggle-sidebar, .by, select {
+  text-rendering: optimizeLegibility; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  -webkit-text-size-adjust:none; 
+}
+
+body{ 
+  font-size:14px;
+  line-height:1.5em;
+  letter-spacing: 0;
+  color: $text-color;
+  font-weight: 400;
+}
+
+/*----------------------------------------------------*/
+
+::-moz-selection { background-color: $highlight-bg; color: $highlight-color; }
+
+::-webkit-selection {	background-color: $highlight-bg; color: $highlight-color; }
+
+::selection { background-color: $highlight-bg; color: $highlight-color; }
+
+::-webkit-input-placeholder { color: $placeholder-color; }
+
+:-moz-placeholder { color: $placeholder-color; }
+
+::-moz-placeholder { color: $placeholder-color; }
+
+:-ms-input-placeholder { color: $placeholder-color; }
+
+/*----------------------------------------------------*/
+
+/*HTML Standard Elements*/
+h1, h2, h3, h4, h5, h6{ line-height: 1.5em; font-weight: 900; letter-spacing: -.02em; }
+
+h1 { 
+  font-size: 1.75em; 
+  margin: 0 0 .75em; 
+  letter-spacing: -.02em; 
+} 
+
+h2.article-title { 
+  @include respond($sm) {
+    font-size: 1.5em; 
+    letter-spacing: -.02em; 
+    margin: .5em 0; 
+  } 
+  @include respond($md) {
+    font-size: 2em;
+    line-height: 1.35em;
+  }
+} 
+
+h2{ 
+  font-size: 1.5em; 
+  margin: 0 0 .75em; 
+  letter-spacing: -.02em; 
+}
+
+p + h1,
+p + h2,
+p + h3 {
+  margin-top: 1.4em;
+}
+
+h1 + img, 
+h2 + img,
+h3 + img,
+h4 + img,
+h1 + .img-wrap, 
+h2 + .img-wrap,
+h3 + .img-wrap,
+h4 + .img-wrap {
+  margin-top:1em;
+}
+
+ .img-wrap + .category {
+  margin-top: 1px;
+  @include respond($sm) {
+    margin-top:2em;
+  }
+}
+
+img + p,
+.img-wrap + p {
+  margin-top:1.25em;
+}
+
+h3{
+  font-family: 'Futura', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-size: 1.15em;
+}
+
+h4{
+  font-size: 1.125em;
+}
+
+h5 {
+  font-family: 'Futura', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.post-grid ul li > a h4, 
+.post-grid.neighborhood ul li.first-six > a h4,
+.detailPager h3 {
+  font-size: 1em;
+  font-family: 'Merriweather', serif;
+  text-transform: none;
+  letter-spacing: 0;
+  @include respond($sm) {
+    font-size: 1.125em;
+  }
+}
+
+.event-list ul li > a h4 {
+  font-size: 1em;
+  font-family: 'Merriweather', serif;
+  text-transform: none;
+  letter-spacing: 0;
+  letter-spacing: -.02em; 
+  @include respond($sm) {
+    font-size: 1.5em;
+  } 
+}
+
+.post-grid.neighborhood ul li > a h4,
+.detailPager h3 {
+  font-size: 1em;
+  @include respond($sm) {
+    font-size: .9em;
+  }
+}
+
+.section-header {
+  text-align: center;
+}
+
+.section-header h4,
+.section-header span {
+  display: inline-block;
+}
+
+.section-header span {
+  width: 40px;
+  height: 15px;
+  background: url(../images/clouds-red.png);
+  background: url(../images/clouds-red.svg);
+  background-repeat: no-repeat;
+  margin-bottom: 1px;
+}
+
+.section-header span.right {
+  background-position: -40px center
+}
+
+.section-header h4{
+  padding: 0 10px 0;
+  font-family: 'Futura', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-size: 1.45em;
+}
+
+h5{
+}
+
+h6{
+}
+
+p, ul, ol, form{ margin:.5em 0 1.25em; }
+
+ul { list-style-position: outside; }
+
+ol{ list-style-position:outside; list-style-type: decimal; }
+
+a { 
+  text-decoration: none; 
+  color: $link-color; 
+  @include transition ((color $speed ease-in-out, border $speed ease-in-out, background-color $speed ease-in-out));
+}
+a:hover { 
+  color: $link-hover-color;
+}
+
+p {
+  hyphenate: auto;
+  hyphenate-before:2;
+  hyphenate-after:3;
+  hyphenate-lines: 3; orphans: 4;
+  //max-width: 800px;
+  font-size: .85em;
+  line-height: 1.75em;
+  letter-spacing: -.02em;
+}
+
+.post p,
+.article p,
+article p,
+.lg p,
+p.lg {
+  font-size: 1.075em;
+  line-height: 1.5em;
+  @include respond($sm) {
+    font-size: 1em;
+    line-height: 1.85em;
+  }
+}
+
+.article.medium {
+  @include respond($md) {
+    font-size: 1.08em;
+  }
+}
+
+.article.large {
+  @include respond($md) {
+    font-size: 1.16em;
+  }
+}
+
+.article p,
+.article p.medium,
+.article p.large {
+  font-size: 1em;
+  @include respond($lg) {
+    font-size: 1.08em;
+  }
+  @include respond($xlg) {
+    font-size: 1.16em;
+  }
+}
+
+p a {
+  color: $text-color;
+  border-bottom: 1px solid $primary-color;
+}
+
+p a:hover {
+  color: $primary-color;
+}
+
+blockquote {
+  font-size: 1.25em;
+  line-height: 1.5em;
+  margin: 1em 0;
+  color: $text-color;
+}
+
+strong { font-weight: 700; }
+
+small{ 
+  display:block;
+  font-size:.75em;
+  letter-spacing:-.0em;
+  margin:0 0 -.2em; 
+  line-height:1.75em; 
+}
+
+hr {
+  border-color: $hr-color;
+  border-width: $hr-weight 0 0 0;
+  border-style: solid;
+  margin: 0;
+}
+
+hr.tiny {
+  border-color: $primary-color;
+  border-width: 2px 0 0 0;
+  border-style: solid;
+  margin: 1.25em auto 1.75em;
+  width: 30px;
+}
+
+.article-title-block hr.tiny {
+  margin-left: 0;
+}
+
+// Forms
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="search"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: none;
+  background: $input-bg;
+  border: $input-border;
+  box-shadow: none;
+  outline: none;
+  font-size: 1em;
+  padding: 9px 11px 6px 11px;
+  width: 100%;
+  margin: 0px 0 1.25em 0;
+  line-height: 1.5em;
+  font-family: 'Futura', sans-serif;
+  font-weight: 900;
+  @include border-radius ($input-border-radius);
+  @include transition ((background $speed ease-in-out, border $speed));
+  resize: none;
+  vertical-align: top;
+  height: 38px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+  background: $input-focus-bg;
+  border: $input-focus-border;
+}
+
+// Radios and Checkboxes
+input[type="radio"],
+input[type="checkbox"] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+input[type="radio"] + label span,
+input[type="checkbox"] + label span {
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  background-color: #ccc;
+  margin-right: 5px;
+  margin-bottom: 3px;
+  vertical-align: middle;
+}
+
+input[type="radio"] + label span {
+  @include border-radius(50%);
+}
+
+input[type="radio"]:checked + label span,
+input[type="checkbox"]:checked + label span {
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  background-color: $link-color;
+}
+
+// Buttons
+.btn,
+input[type="submit"],
+button {
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  display: block;
+  text-align: center;
+  background-image: none;
+  -webkit-appearance: caret;
+	-moz-appearance: caret; /* mobile firefox too! */
+	-webkit-appearance: none;
+  font-family: 'Futura', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-size: $small-font;
+  background-color: $btn-bg;
+  color: $btn-color;
+  padding: 15px 15px 14px 15px;
+  margin: 0px 0px 0px 0px;
+  min-width: 200px;
+  width: 100%;
+  font-weight: 900;
+  cursor: pointer;
+  line-height: 1em;
+  @include border-radius ($btn-border-radius);
+  @include transition ((border $speed ease-in-out, background-color $speed ease-in-out, color $speed ease-in-out));
+  @include respond($sm) {
+    max-width: 200px;
+    width: 200px;
+  }
+}
+
+select {
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  display: block;
+  text-align: center;
+  font-family: 'Futura', sans-serif;
+  background-image: url(../images/arrow-triangle-blk.png);
+  background-image: url(../images/arrow-triangle-blk.svg);
+  background-position: right center;
+  background-repeat: no-repeat;
+  font-size: 12px;
+  letter-spacing: 0em;
+  background-color: $input-bg;
+  color: $text-color;
+  padding: 14px 15px 13px 15px;
+  margin: 0px 0px 0px 0px;
+  min-width: 175px;
+  width: 100%;
+  font-weight: 900;
+  cursor: pointer;
+  line-height: 1em;
+  text-align: center;
+  @include border-radius ($btn-border-radius);
+  @include transition ((border $speed ease-in-out, background-color $speed ease-in-out, color $speed ease-in-out));
+}
+
+select:hover {
+  background-color: $input-focus-bg;
+}
+
+.event-list a.btn,
+.post-grid a.btn {
+  color: $btn-color;
+}
+
+.event-list a.btn:hover,
+.post-grid a.btn:hover {
+  color: $btn-hover-color;
+}
+
+.btn.loading,
+input[type="submit"].loading,
+button.loading,
+.btn.loading:hover,
+input[type="submit"].loading:hover,
+button.loading:hover {
+  text-indent: -9999px;
+  overflow: hidden;
+  background-image: url(../images/btn-loader.gif);
+  background-size: auto 9px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: $primary-color;
+  cursor: default;
+}
+
+#newsletter input[type="submit"] {
+  max-width: 200px;
+  width: 200px;
+}
+
+#newsletter input[type="email"] {
+  max-width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn:hover,
+input[type="submit"]:hover,
+button:hover {
+  color: $btn-hover-color;
+  background-color: $btn-hover-bg;
+}
+
+.btn:active,
+input[type="submit"]:active,
+button:active {
+  color: $btn-hover-color;
+  background-color: $primary-color;
+}
+
+.btn.layover {
+  background-color: rgba(38,38,38,.8);
+}
+
+.btn.layover:hover {
+  background-color: $text-color;
+  color: #fff;
+}
+
+// Nav
+ul.sections-across,
+ul.filters {
+  font-family: 'Futura', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-size: $small-font;
+  font-weight: 900;
+  text-align: center;
+}
+
+ul.sections-across a,
+ul.filters li a {
+  color: $text-color;
+  border: 1px solid transparent;
+}
+
+ul.sections-across a:hover,
+ul.filters li a:hover {
+  color: $primary-color;
+  border-color: #e4e4e4;
+}
+
+ul.sections-across li,
+ul.filters li {
+  display: inline-block;
+  margin: 0 -4px;
+}
+
+ul.sections-across li a,
+ul.filters li a {
+  padding: 6px 8px 4px 9px;
+  margin: 3px 5px;
+  @include border-radius($btn-border-radius);
+}
+
+ul.sections-across li a:hover,
+ul.filters li a:hover,
+ul.filters li a.active {
+  background-color: #fff;
+  color: $primary-color;
+  border-color: #e4e4e4;
+}
+
+// Post Blocks
+.event-list a,
+.post-grid a {
+  color: $text-color;
+}
+
+.category,
+.read-more,
+.by {
+  display: block;
+  font-family: 'Futura', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-size: $small-font;
+  margin-bottom: .85em;
+  font-weight: 900;
+  color: $primary-color;
+  line-height: 1.5em;
+}
+
+.by {
+  color: $text-light;
+  margin-bottom: 0;
+}
+
+.read-more {
+  color: $primary-color;
+}
+
+// Medie Query
+@media only screen and (min-width:550px){
+  //body { font-size: 15px; }
+  //p { font-size: .8em; }
+}

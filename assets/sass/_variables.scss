@@ -1,0 +1,55 @@
+/// Colors
+//$bg-color : #f7f8f8;
+$bg-color : #f2f2f2;
+$primary-color : #d71f26;	// Red
+$light-gray : #d2d2d2;
+
+// Text Colors
+$text-color : #262626;		// Dark Grey
+$text-light : #888;		// Gray
+$hr-color : #333;
+$hr-weight : 1px;
+
+// Typography
+$small-font : 10px;
+
+// Highlights
+$highlight-bg : $primary-color;
+$highlight-color : #fff;
+
+// Text Inputs
+$input-bg : #ccc;
+$input-border : 1px solid $input-bg;
+$input-border-radius : 4px;
+$input-focus-bg : #ddd;
+$input-focus-border : 1px solid $input-focus-bg;
+$placeholder-color : #777;
+
+// Links
+$link-color : $primary-color;
+$link-hover-color : #a70203;
+$dropdown-color : #eee;
+
+// Buttons
+$btn-bg : $primary-color;
+$btn-color : $bg-color;
+$btn-hover-bg : $link-hover-color;
+$btn-border-radius : $input-border-radius;
+$btn-hover-color : #fff;
+
+/// Grid Settings
+$gutter : 3%;
+$grid-gutter: $gutter;
+$half-gutter : $gutter / 2;
+$double-gutter : $gutter * 2;
+
+/// Breakpoints
+$sm : "min-width: 600px";
+$md : "min-width: 850px";
+$lg : "min-width: 950px";
+$xlg : "min-width: 1200px";
+$max-width : "min-width: 1600px";
+
+/// Transitions
+$fast : .15s;
+$speed : .3s;

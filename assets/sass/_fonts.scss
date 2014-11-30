@@ -1,0 +1,16 @@
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic,900,900italic);
+
+@font-face {
+		font-family: 'Futura';
+		src: url('../fonts/FuturaStd-Bold.eot');
+		src: url('../fonts/FuturaStd-Bold.eot?#iefix') format('embedded-opentype'),
+				 url('../fonts/FuturaStd-Bold.woff') format('woff'),
+				 url('../fonts/FuturaStd-Bold.ttf') format('truetype'),
+				 url('../fonts/FuturaStd-Bold.svg#futurastd-bold') format('svg');
+		font-weight: 900;
+		font-style: normal;
+}
+
+html, form, textarea, input, input[type="text"], input[type="search"], input[type="password"], input[type="email"], button {
+	font-family: 'Merriweather', serif;
+}

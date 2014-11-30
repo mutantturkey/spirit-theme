@@ -1,0 +1,579 @@
+// Post Grid
+.post-grid ul {
+  margin-top: 0px;
+	@include respond($sm) {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		margin-left: -($gutter * .5);
+		margin-right: -($gutter * .5);
+	}
+}
+.post-grid > ul li {
+	margin-bottom: 10%;
+	overflow-x: hidden;
+	@include border-radius(0);
+	border: none;
+	margin-bottom: 0;
+	@include respond($sm) {
+		overflow-x: visible;
+		width: 50%;
+		margin-right: -4px;
+		display: inline-block;
+		padding: $half-gutter $half-gutter $half-gutter;
+		vertical-align: top;
+		margin-bottom: (1.5 * $gutter);
+		margin-top: -($half-gutter);
+	}
+	@include respond($md) {
+		width: 33.3334%;
+	}
+}
+
+.post-grid > ul li > a {
+	border-top: 2px solid $text-color;
+	padding: 1.25em 0;
+	display: block;
+	overflow: hidden;
+	@include respond($sm) {
+		overflow: visible;
+		padding-bottom: 0;
+	}
+}
+
+.post-grid ul li > a .img-wrap {
+	width: 30%;
+	float: left;
+	@include respond($sm) {
+		width: 100%;
+		float: none;
+		position: relative;
+	}
+}
+
+.post-grid ul li > a .info-wrap {
+  @include respond($sm) {
+    margin-top: 1.5em;
+  }
+}
+
+.post-grid ul li > a .category,
+.post-grid ul li > a h4,
+.post-grid ul li > a .by {
+	width: 70%;
+	//display: inline-block;
+	margin-right: -4px;
+	padding-left: 15px;
+	float: right;
+	@include respond($sm) {
+		width: 100%;
+		padding-left: 0;
+		position: relative;
+	  float: none;
+	}
+}
+
+.post-grid ul li > a .by {
+  margin-top: 1em;
+  margin-bottom: 0;
+  @include respond($sm) {
+    margin-top: 0;
+  }
+}
+
+.btn.load-more {
+	@include respond($sm) {
+		width: (33.33% - $gutter);
+		max-width: (33.33% - $gutter);
+    width: (33.33% - ($gutter/2));
+    max-width: (33.33% - ($gutter/2));
+		margin: 5em auto 7em;
+	}
+}
+
+.btn.load-more > div {
+  width: 2px;
+  height: 8px;
+  background-color: $bg-color;
+  display: inline-block;
+  position: relative;
+  margin-right: 13px;
+}
+
+.btn.load-more > div span {
+  display: block;
+  height: 2px;
+  width: 8px;
+  background-color: $bg-color;
+  display: inline-block;
+  position: absolute;
+  left: -3px;
+  top: 3px;
+}
+
+// Neighborhood Grid
+
+.post-grid.neighborhood > ul li.first-six {
+  @include respond($md) {
+    width: 33.3334%;
+  }
+}
+
+.post-grid.neighborhood > ul li,
+.post-grid.related > ul li {
+  @include respond($md) {
+    width: 25%;
+  }
+}
+
+// Section Grid
+
+.post-grid.section > ul li.first-child.first-four {
+  margin-bottom: 1.5em;
+  @include respond($sm) {
+    width: 100%;
+  }
+}
+
+.post-grid.section > ul li.first-child.first-four a {
+  @include respond($sm) {
+    float: left;
+    width: 100%;
+    border-top: none;
+    padding-top: 0;
+  }
+}
+
+.post-grid.section > ul li.first-child.first-four a .info-wrap {
+  width: 100%;
+  @include respond($sm) {
+    float: right;
+    width: 48.5%;
+    margin-top: 0;
+    border-top: 2px solid $text-color;
+    padding-top: 1.5em;
+  }
+  @include respond($md) {
+    width: 31.83334%;
+  }
+}
+
+.post-grid.section > ul li.first-child.first-four a .img-wrap {
+  width: 100%;
+  margin-bottom: 1.25em;
+  @include respond($sm) {
+    width: 48.5%;
+  }
+  @include respond($md) {
+    width: 65.1667%;
+  }
+}
+
+.post-grid.section > ul li.first-child.first-four a .info-wrap span, 
+.post-grid.section > ul li.first-child.first-four a .info-wrap p,
+.post-grid.section > ul li.first-child.first-four a .info-wrap h4 {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.post-grid.section > ul li.first-child.first-four a h4 { 
+  @include respond($md) {
+    font-size: 1.5em; 
+    margin: .5em 0; 
+    letter-spacing: -.02em; 
+  } 
+  @include respond($xlg) {
+    font-size: 2em;
+    margin: .5em 0; 
+    line-height: 1.35em;
+  }
+}
+
+.post-grid.section > ul li.first-child.first-four a p {
+  @include respond($xlg) {
+    font-size: 1em;
+  }
+}
+
+.post-grid.section > ul li.first-child.first-four .img-wrap {
+  @include respond($sm) {
+    width: 48.5%;
+    float: left;
+    margin-right: 3%;
+  }
+  @include respond($md) {
+    width: 65.1667%;
+  }
+}
+
+.post-grid.section > ul li.first-four {
+  @include respond($md) {
+    width: 33.3334%;
+  }
+}
+
+.post-grid.section > ul li,
+.post-grid.related > ul li {
+  @include respond($md) {
+    width: 25%;
+  }
+}
+
+.events .load-more {
+  margin-top: 0px;
+  @include respond($md) {
+    margin-top: 5em;
+  }
+}
+
+.events > li {
+  border-top: 1px solid $light-gray;
+  @include respond($xlg) {
+    font-size: 16px;
+  }
+}
+
+.events > li a {
+  padding: 1em 0;
+  display: block;
+  overflow-y: hidden;
+  @include respond($sm) {
+    padding: 1.5em;
+  }
+}
+
+.events > li a:hover {
+  @include respond($sm) {
+    background-color: #fff;
+  }
+}
+
+.events .location-badge {
+  display: none;
+}
+
+.events .img-wrap {
+  float: right;
+  width: 33.3334%;
+  @include respond($md) {
+    width: 16.6667%;
+  }
+}
+
+.events .info-wrap {
+  float: right;
+  width: 66.6667%;
+  padding-right: 6%;
+  @include respond($md) {
+    width: 83.3334%;
+    padding-right: 3%;
+  }
+}
+
+.events .info-wrap .category {
+  margin-bottom: .65em;
+  @include respond($sm) {
+    margin-bottom: .85em;
+  }
+}
+
+.events .info-wrap h4 {
+  margin-bottom: .75em;
+  @include respond($sm) {
+    margin-bottom: 0;
+  }
+}
+
+.events .info-wrap p {
+  font-size: 1.075em;
+  line-height: 1.5em;
+  display: none;
+  @include respond($sm) {
+    display: block;
+    font-size: 1em;
+    line-height: 1.75em;
+  }
+}
+
+// Home
+
+.slideshow {
+  position: relative;
+}
+
+.slideshow.top {
+}
+
+.slideshow.top p {
+  display: none;
+  @include respond($lg) {
+    display: block;
+  }
+}
+
+.slideshow .next,
+.slideshow .prev {  
+  //display: none;
+    bottom: 9px;
+    height: auto;
+    width: 75px;
+    z-index: 2;
+    margin-top: 0;
+    bottom: -29px;
+    text-indent: -9999px;
+    overflow: hidden;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    @include transition((left $speed ease-in-out, right $speed ease-in-out));
+  @include respond($md) {
+    //bottom: auto;
+    display: block;
+    height: 100%;
+    display: block;
+    top: 0;
+  }
+}
+
+.slideshow.top .image-area {
+  position: relative;
+}
+
+.slideshow .next {
+  background-image: url(../images/arrow-right.png);
+  background-image: url(../images/arrow-right.svg);
+  right: -7px;
+  @include respond($md) {
+    right: -45px;
+  }
+}
+
+.slideshow .prev {
+  background-image: url(../images/arrow-left.png);
+  background-image: url(../images/arrow-left.svg);
+  left: -7px;
+  @include respond($md) {
+    left: -45px;
+  }
+}
+
+.slideshow .next:hover {
+  @include respond($md) {
+    right: -50px;
+  }
+}
+
+.slideshow .prev:hover {
+  @include respond($md) {
+    left: -50px;
+  }
+}
+
+.slideshow ul.slides {
+	margin: 0;
+	z-index: 1;
+  @include respond($sm) {
+    margin-top: 6%;
+  }
+	@include respond($md) {
+		margin: 50px 0px 0;
+	}
+}
+
+.slideshow ul.slides li {
+	position: relative;
+}
+
+.slideshow.top ul.slides li .slide-info {
+  text-align: center;
+  height: 175px;
+  display: table;
+  width: 100%;
+  background-color: #fff;
+	@include respond($md) {
+    background-color: transparent;
+    display: block;
+    height: auto;
+		margin: 0;
+		display: block;
+		position: absolute;
+		bottom: 30px;
+		left: 30px;
+		width: 325px;
+		@include box-shadow(0px, 0px, 10px, rgba(0,0,0,.15));
+	}
+}
+
+.detailPager {
+  display: none;
+  @include respond($lg) {
+    display: block;
+    margin: 0;
+  }
+}
+
+.detailPager li {
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  min-height: 127px;
+  cursor: pointer;
+  margin: 0;
+  padding: 1.25em 0 1em;
+  margin-right: 0px;
+  background-color: transparent;
+  @include transition((background $speed ease-in-out, border $speed ease-in-out));
+}
+
+.detailPager li > div {
+  padding: 0 6%;
+  width: 100%;
+  border-left: 1px solid $light-gray;
+  min-height: 95px;
+}
+
+.detailPager li.last-child > div {
+  border-right: 1px solid $light-gray;
+}
+
+.detailPager li.active, {
+  background-color: #fff;
+}
+
+.detailPager li:hover > div {
+}
+
+.detailPager li span.category {
+  color: $text-light;
+  @include transition((color $speed ease-in-out));
+}
+
+.detailPager li h3 {
+  line-height: 1.5em;
+  margin-bottom: 0px;
+  color: $text-light;
+  @include transition((color $speed ease-in-out));
+}
+
+.detailPager li.active span.category,
+.detailPager li.active:hover span.category {
+  color: $primary-color;
+}
+
+.detailPager li.active h3,
+.detailPager li:hover h3,
+.detailPager li:hover span.category {
+  color: $text-color;
+}
+
+.slidePager {
+  text-align: center;
+  border-top: 1px solid #e5e5e5;
+  padding: 1em 0 1em 0;
+  background-color: #fff;
+  @include respond($md) {
+    display: none;
+  }
+}
+
+.slidePager span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border: 2px solid $text-color;
+  @include border-radius(50%);
+  text-indent: -9999px;
+  overflow: hidden;
+  margin: 0 5px;
+}
+
+.slidePager span.active {
+  border-color: $primary-color;
+}
+
+.slideshow.top hr.tiny {
+  margin-left: auto;
+  @include respond($sm) {
+    margin-left: auto;
+  }
+}
+
+.slideshow ul.slides li .btn.more {
+  display: none;
+  padding: 11px 11px 9px;
+  width: auto;
+  min-width: 100px;
+  @include respond($md) {
+    display: block;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    min-width: 100px;
+  }
+}
+
+.slideshow ul.slides li.right .btn.more {
+  left: 30px;
+  right: auto;
+}
+
+.slideshow ul.slides li .slide-info a {
+  display: block;
+  color: $text-color;
+  padding: 20px 5% 15px;
+  display: table-cell;
+  vertical-align: middle;
+  @include respond($md) {
+    display: block;
+    padding: 30px;
+    background-color: $bg-color;
+  }
+}
+
+.slideshow ul.slides li .slide-info a:hover {
+  @include respond($md) {
+    background-color: rgba(235,235,235,.9);
+  }
+}
+
+.slide-info p {
+	//display: none;
+	@include respond($sm) {
+		display: block;
+	}
+}
+
+.slide-info h3 {
+  font-size: .9em;
+  max-height: 60px;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  max-width: 400px;
+  margin: 0 auto;
+  @include respond($md) {
+    font-size: 1em;
+    max-height: auto;
+  }
+}
+
+.slide-info hr.tiny {
+	margin: 13px auto 18px;
+}
+
+.slideshow ul.slides li.right .slide-info {
+	left: auto;
+	right: 30px;
+}
+
+.slideshow ul.slides li img.slide-location {
+	display: none;
+	@include respond($sm) {
+		display: block;
+		position: absolute;
+		top: 25px;
+		right: -25px;
+	}
+}
