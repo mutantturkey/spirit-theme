@@ -30,13 +30,17 @@ spirit = {
     });
 
     jQuery("a.fade, nav a").click(function(event){
-      event.preventDefault();
-      var num = 0;
-      link = jQuery(this);
-      setTimeout(function(){
-        linkLocation = link.attr('href');
-        jQuery('body').fadeOut(400, redirectPage);
-      },num);
+      switch(event.which) {
+        case 1:
+          event.preventDefault();
+          var num = 0;
+          link = jQuery(this);
+          setTimeout(function(){
+            linkLocation = link.attr('href');
+            jQuery('body').fadeOut(400, redirectPage);
+            },0);
+      }
+          return true;
     });
          
     function redirectPage() {
