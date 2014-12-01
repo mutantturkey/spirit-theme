@@ -1,17 +1,16 @@
- <?php $section=strtolower(taxonomy_term_load($node->field_section['und'][0]["tid"])->name); ?>
- <?php $location=strtolower(taxonomy_term_load($node->field_location['und'][0]["tid"])->name); ?>
-<a href="/node/<?php print $node->nid?>">
+<? include "article-variables.php" ?>
+<a href="<?=$url?>">
 <div class="fade">
   <div class="img-wrap">
-    <div class="location-badge <?php print $location; ?>"><img src="/sites/all/themes/spirit/assets/images/<?php print $location;?>-black.png"></div>
-    <img src="<?php print image_style_url("1000_750", $node->field_image['und'][0]["uri"])?>">
+    <div class="location-badge <?=$location?>"><img src="/sites/all/themes/spirit/assets/images/<?=$location;?>-black.png"></div>
+    <img src="<?php print image_style_url("1000_750", $image); ?>">
   </div>
   <div class="info-wrap">
-    <h4><?php print $node->title ?></h4>
-    <span class="category"><?php print $section ?> in <?php print $location ?></span>
-    <p><?php print text_summary($node->body[LANGUAGE_NONE][0]['value'], NULL, NULL);?></p>
-      <?php if($node->field_author_name['und'][0]['value']): ?>
-        <span class="by">By <?php print $node->field_author_name['und'][0]['value']; ?></span>
+    <h4><?=$node->title ?></h4>
+    <span class="category"><?=$section ?> in <?=$location ?></span>
+    <p><?=$summary?></p>
+      <?php if($author): ?>
+        <span class="by">By <?=$author?></span>
       <?php endif ?>
   </div>
 </div>
