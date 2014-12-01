@@ -5,20 +5,24 @@ core = 7.x
 engine = phptemplate
 
 ; Stylesheets. Anything within the "framework" folder will be placed before all others.
-stylesheets[all][] = styles/framework/reset.css
+; stylesheets[all][] = layout/styles/framework/reset.css
 ; stylesheets[all][] = styles/framework/960.css
 ; stylesheets[all][] = styles/framework/debug.css
 
 ; Theme specific styles. Any sub-themes should override this.
-stylesheets[all][] = styles/styles.css
-stylesheets[all][] = styles/slideshow.css
-stylesheets[all][] = styles/social-media.css
-stylesheets[all][] = styles/fadein.css
+stylesheets[all][] =  temporary.css
+;stylesheets[all][] = styles/styles.css
+;stylesheets[all][] = styles/slideshow.css
+;stylesheets[all][] = styles/events.css
+;stylesheets[all][] = styles/social-media.css
+;stylesheets[all][] = styles/fadein.css
+;stylesheets[all][] = styles/article.css
 
 ; stylesheets[all][] = styles/framework/text.css
 
-scripts[] = scripts/search.js
-scripts[] = scripts/header.js
+;scripts[] = scripts/search.js
+;scripts[] = scripts/header.js
+;scripts[] = assets/js/main.js
 
 regions[page_top]       = Page top
 regions[header]         = Header
