@@ -1,0 +1,37 @@
+.filters .form-item .form-type-bef-link {
+  display: inline-block;
+}
+
+.filters .form-item .form-type-bef-link a {
+  padding: 6px 8px 4px 9px;
+  margin: 3px 5px;
+  text-transform: uppercase;
+  color: #262626;
+  font-family: Futura, sans-serif;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: .15em;
+  border: 1px solid transparent;
+}
+.filters .form-item .form-type-bef-link a:hover {
+  color: #d71f26;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  background-color: #fff;
+  border-color: #e4e4e4;
+}
+
+.filters .form-item .form-type-bef-link a.active {
+  color: #d71f26;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  background-color: #fff;
+  border-color: #e4e4e4;
+}
+
+.btn.load-more > a {
+  color: white;
+}
