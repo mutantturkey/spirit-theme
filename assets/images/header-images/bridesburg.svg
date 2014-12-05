@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -9,101 +9,72 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="98.124641"
-   height="39.544708"
-   id="svg5158"
    version="1.1"
+   id="Layer_1"
+   x="0px"
+   y="0px"
+   width="62.032497"
+   height="25.237501"
+   viewBox="0 0 62.032496 25.237502"
+   enable-background="new 0 0 73.025 77.977"
+   xml:space="preserve"
    inkscape:version="0.48.5 r10040"
-   sodipodi:docname="port-richmond.svg">
-  <defs
-     id="defs5160" />
-  <sodipodi:namedview
-     id="base"
+   sodipodi:docname="bridesburg.svg"><metadata
+     id="metadata3142"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs3140" /><sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="-365.7399"
-     inkscape:cy="-118.55323"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     showgrid="false"
-     inkscape:window-width="529"
+     inkscape:window-width="796"
      inkscape:window-height="861"
-     inkscape:window-x="2214"
-     inkscape:window-y="18"
-     inkscape:window-maximized="0"
+     id="namedview3138"
+     showgrid="false"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
-     fit-margin-bottom="0" />
-  <metadata
-     id="metadata5163">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-740.7399,-374.26424)">
-    <g
-       transform="matrix(1.25,0,0,-1.25,287.20362,630.52391)"
-       id="g5134">
-      <g
-         transform="translate(435.6895,184.8174)"
-         id="g3609">
-        <path
-           inkscape:connector-curvature="0"
-           id="path3611"
-           style="fill:none;stroke:#100f0d;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-           d="m 0,0 -4.964,12.871 -16.249,6.324 -22.984,0 L -60.446,12.871 -65.41,0" />
-      </g>
-      <g
-         transform="translate(440.3145,184.8174)"
-         id="g3613">
-        <path
-           inkscape:connector-curvature="0"
-           id="path3615"
-           style="fill:none;stroke:#100f0d;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-           d="M 0,0 -76.439,0" />
-      </g>
-      <g
-         transform="translate(375.2432,197.6885)"
-         id="g3617">
-        <path
-           inkscape:connector-curvature="0"
-           id="path3619"
-           style="fill:none;stroke:#100f0d;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-           d="M 0,0 8.683,-12.871 16.249,6.324 27.74,-12.871 39.233,6.324 46.798,-12.871 55.482,0" />
-      </g>
-      <g
-         transform="translate(383.9258,184.8174)"
-         id="g3621">
-        <path
-           inkscape:connector-curvature="0"
-           id="path3623"
-           style="fill:none;stroke:#100f0d;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-           d="M 0,0 0,-10.418" />
-      </g>
-      <g
-         transform="translate(422.041,184.8174)"
-         id="g3625">
-        <path
-           inkscape:connector-curvature="0"
-           id="path3627"
-           style="fill:none;stroke:#100f0d;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
-           d="M 0,0 0,-10.131" />
-      </g>
-    </g>
-  </g>
-</svg>
+     fit-margin-bottom="0"
+     inkscape:zoom="3.0265336"
+     inkscape:cx="31.016249"
+     inkscape:cy="16.589251"
+     inkscape:window-x="2480"
+     inkscape:window-y="18"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Layer_1" /><polyline
+     stroke-miterlimit="10"
+     points="  62.911,46.407 59.011,36.294 46.242,31.324 28.182,31.324 15.413,36.294 11.513,46.407 "
+     id="polyline3128"
+     style="fill:none;stroke:#000000;stroke-width:1.96749997;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+     transform="translate(-5.4962518,-30.34025)" /><line
+     stroke-miterlimit="10"
+     x1="61.048748"
+     y1="16.066751"
+     x2="0.98374826"
+     y2="16.066751"
+     id="line3130"
+     style="fill:none;stroke:#000000;stroke-width:1.96749997;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" /><polyline
+     stroke-miterlimit="10"
+     points="  15.413,36.294 22.236,46.407 28.182,31.324 37.211,46.407 46.242,31.324 52.187,46.407 59.011,36.294 "
+     id="polyline3132"
+     style="fill:none;stroke:#000000;stroke-width:1.96749997;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10"
+     transform="translate(-5.4962518,-30.34025)" /><line
+     stroke-miterlimit="10"
+     x1="16.739748"
+     y1="16.066751"
+     x2="16.739748"
+     y2="24.253752"
+     id="line3134"
+     style="fill:none;stroke:#000000;stroke-width:1.96749997;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" /><line
+     stroke-miterlimit="10"
+     x1="46.69075"
+     y1="16.066751"
+     x2="46.69075"
+     y2="24.02775"
+     id="line3136"
+     style="fill:none;stroke:#000000;stroke-width:1.96749997;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10" /></svg>
