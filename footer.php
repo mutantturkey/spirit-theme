@@ -30,4 +30,5 @@
 <div class="admin">
   <?php if($is_admin): ?>
     <?php kpr(get_defined_vars()); ?>
+    <?php print $messages ?>
   <?php endif ?>
