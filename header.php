@@ -12,10 +12,7 @@
 	<div class="search-wrap">
 	  <div>
   	  <div class="container">
-  		  <form>
-  		    <input type="text" placeholder="Search" />
-  		    <input type="Submit" value="Search" />
-  		  </form>
+        <?php print render($page['search_box']); ?>
   	  </div>
 	  </div>
 	</div>
@@ -49,3 +46,4 @@
 </div>
 <div class="overlay"></div>
 <div class="search-overlay"></div>
+<div id="fb-root"></div>
