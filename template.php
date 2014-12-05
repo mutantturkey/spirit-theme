@@ -11,14 +11,41 @@ define('CSS_NS_FRAMEWORK', -200);
  */
 function spirit_preprocess_html(&$vars) {
   $vars['classes_array'][] = 'show-grid';
+  drupal_add_css('http://fonts.googleapis.com/css?family=Merriweather', array('type' => 'external'));
 }
 
 /**
  * Preprocessor for page.tpl.php template file.
  */
+function spirit_preprocess_node(&$vars) {
+  if($vars['node']->type == 'article') {
+    if($vars['view_mode'] == 'section_header'){
+      $vars['theme_hook_suggestions'][] = 'node__article__sectionheader';
+    }
+    if($vars['view_mode'] == 'teaser') {
+      $vars['theme_hook_suggestions'][] = 'node__article__teaser';
+    }
+    if($vars['view_mode'] == 'slideshow') {
+      $vars['theme_hook_suggestions'][] = 'node__article__slideshow';
+    }
+  }
+  if($vars['node']->type == 'event') {
+    if($vars['view_mode'] == 'teaser') {
+      $vars['theme_hook_suggestions'][] = 'node__event__teaser';
+    }
+  }
+}
+
 function spirit_preprocess_page(&$vars, $hook) {
 
+
+  if (isset($vars['node'])) {
+    // If the node type is "blog" the template suggestion will be "page--blog.tpl.php".
+    $vars['theme_hook_suggestions'][] = 'node__'. str_replace('_', '-', $vars['node']->type);
+  }
   // For easy printing of variables.
+
+  /*
   $vars['logo_img'] = '';
   if (!empty($vars['logo'])) {
     $vars['logo_img'] = theme('image', array(
@@ -47,22 +74,18 @@ function spirit_preprocess_page(&$vars, $hook) {
     ));
   }
 
+  */
   // Site navigation links.
   $vars['main_menu_links'] = '';
   if (isset($vars['main_menu'])) {
     $vars['main_menu_links'] = theme('links__system_main_menu', array(
       'links' => $vars['main_menu'],
       'attributes' => array(
-        'id' => 'main-menu',
-        'class' => array('inline', 'main-menu'),
-      ),
-      'heading' => array(
-        'text' => t('Main menu'),
-        'level' => 'h2',
-        'class' => array('element-invisible'),
+        'class' => array('sections-across'),
       ),
     ));
   }
+  /*
   $vars['secondary_menu_links'] = '';
   if (isset($vars['secondary_menu'])) {
     $vars['secondary_menu_links'] = theme('links__system_secondary_menu', array(
@@ -78,6 +101,7 @@ function spirit_preprocess_page(&$vars, $hook) {
       ),
     ));
   }
+  */
 
 }
 
@@ -94,6 +118,8 @@ function spirit_preprocess_page(&$vars, $hook) {
  * If $var_a contains data, the next parameter (integer) will be subtracted from
  * the default class. See the README.txt file.
  */
+
+ /*
 function ns() {
   $args = func_get_args();
   $default = array_shift($args);
